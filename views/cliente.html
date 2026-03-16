@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tienda</title>
+<link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body onload="verificarSesion()">
+
+<h1>Tienda de Computadoras</h1>
+
+<h2>Catálogo</h2>
+
+<div id="catalogo"></div>
+
+<h2>Carrito</h2>
+
+<div id="carrito"></div>
+
+<h3>Total: $<span id="total">0</span></h3>
+
+<button onclick="comprar()">Comprar</button>
+
+<br><br>
+
+<button onclick="logout()">Cerrar sesión</button>
+
+<script src="../models/productos.js"></script>
+<script src="../controllers/carritoController.js"></script>
+<script src="../js/session.js"></script>
+
+</body>
+</html>

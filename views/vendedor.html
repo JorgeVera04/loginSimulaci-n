@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Panel Vendedor</title>
+<link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body onload="verificarSesion()">
+
+<h1>Panel Vendedor</h1>
+
+<h2>Registrar Venta</h2>
+
+<select id="productoSelect"></select>
+
+<button onclick="registrarVenta()">Vender</button>
+
+<h2>Ventas realizadas</h2>
+
+<div id="ventas"></div>
+
+<button onclick="logout()">Cerrar sesión</button>
+
+<script src="../models/productos.js"></script>
+<script src="../controllers/ventaController.js"></script>
+<script src="../js/session.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Panel Administrador</title>
+<link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body onload="verificarSesion()">
+
+<h1>Panel Administrador</h1>
+
+<h2>Agregar Producto</h2>
+
+<input type="text" id="nombre" placeholder="Nombre producto">
+<input type="number" id="precio" placeholder="Precio">
+<input type="text" id="categoria" placeholder="Categoría">
+
+<button onclick="agregarProducto()">Agregar</button>
+
+<h2>Lista de Productos</h2>
+
+<div id="listaProductos"></div>
+
+<br>
+<button onclick="logout()">Cerrar sesión</button>
+
+<script src="../models/productos.js"></script>
+<script src="../controllers/productoController.js"></script>
+<script src="../js/session.js"></script>
+
+</body>
+</html>
